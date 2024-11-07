@@ -72,6 +72,14 @@ def main():
     )
     st.header("Customer response generator :bird:")
     message = st.text_area("customer message")
+
+    if message:
+        st.write("Generating best practice message...")
+
+        result = generate_response(message)
+
+        st.info(result)
+
     
 # message = """
 # Hello,
